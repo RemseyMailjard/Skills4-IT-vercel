@@ -1,0 +1,27 @@
+.signup-screen {
+  @apply flex 
+  items-center
+  justify-center
+  w-full;
+}
+.signup-container {
+  @apply bg-white
+  max-w-[500px]
+  w-full
+  p-3
+  rounded-xl
+  text-center
+  flex;
+}
+.signup-container .signup-login {
+  @apply !my-3;
+}
+.signup-container .forgot-password {
+  @apply flex
+    justify-end
+    !my-3;
+}
+.signup-container .signup-button {
+  @apply w-full
+  mt-3;
+}

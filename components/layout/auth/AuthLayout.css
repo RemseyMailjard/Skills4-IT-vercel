@@ -1,0 +1,54 @@
+.auth-layout-header {
+  @apply fixed
+    w-full
+    top-0
+    shadow-[0px_-3px_10px]
+    h-24
+    max-md:h-20
+    flex
+    items-center
+    z-10;
+  background: linear-gradient(90deg, #4434c2, #5cb49c);
+}
+.auth-layout-header .auth-header-main {
+  @apply mx-auto 
+    flex 
+    flex-wrap 
+    px-5 
+    text-white
+    flex-col 
+    md:flex-row 
+    items-center 
+    w-full
+    max-w-screen-2xl;
+}
+.auth-layout-header .auth-header-main .logo_text {
+  @apply flex 
+  items-center 
+  text-4xl 
+  font-bold 
+  leading-[0.75]  
+  align-middle 
+  transition-all 
+  duration-200 
+  ease-[ease] 
+  lg:ml-[7px] 
+  cursor-pointer
+  hover:text-[#0078d4];
+  font-family: "Roboto Slab", serif;
+}
+.auth-layout-header .auth-header-main .logo_text:hover span {
+  @apply text-black;
+}
+.auth-layout-header .auth-header-main .logo_text span {
+  @apply text-brand-blue;
+}
+.auth-layout-main {
+  @apply mt-24
+    max-md:mt-20 
+    md:flex
+    p-5
+    min-h-[calc(100vh_-_96px)]
+    max-w-screen-2xl
+    m-auto;
+}

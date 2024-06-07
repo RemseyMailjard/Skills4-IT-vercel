@@ -1,0 +1,45 @@
+.custom-select {
+  @apply !rounded-md !bg-brand-gray text-base;
+}
+.custom-select .MuiSelect-select {
+  @apply !rounded-md;
+}
+
+.custom-select > .Mui-focused {
+  @apply !rounded-md;
+}
+
+.custom-select .MuiInputLabel-root.Mui-focused {
+  @apply !text-brand-blue;
+}
+
+.custom-select input {
+  @apply rounded-md;
+}
+
+.custom-select .MuiInputBase-root {
+  @apply bg-transparent;
+}
+
+.custom-select .MuiInputBase-root:hover {
+  @apply rounded-md;
+}
+
+.custom-select .MuiInputBase-root::after,
+.custom-select .MuiInputBase-root:hover ::after,
+.custom-select .MuiInputBase-root::before,
+.custom-select .MuiInputBase-root:hover ::before {
+  @apply !border-none;
+}
+
+.custom-select .MuiOutlinedInput-notchedOutline {
+  @apply border-none;
+}
+
+/*
+
+@media (max-width: 768px) {
+  .custom-select {
+    @apply w-full;
+  }
+} */

@@ -1,0 +1,74 @@
+.custom-input {
+  @apply !rounded-md !bg-brand-gray text-base;
+  & .MuiInputBase-root {
+    @apply bg-transparent !rounded-md;
+  }
+  & input {
+    @apply rounded-md;
+  }
+  & .date-picker-button {
+    & button {
+      @apply !m-0;
+    }
+  }
+}
+
+.custom-input > .Mui-focused {
+  @apply !rounded-md;
+}
+
+.custom-input .MuiInputLabel-root.Mui-focused {
+  @apply !text-brand-blue;
+}
+
+.custom-input .MuiInputBase-root::after,
+.custom-input .MuiInputBase-root:hover ::after,
+.custom-input .MuiInputBase-root::before,
+.custom-input .MuiInputBase-root:hover ::before {
+  @apply !border-none;
+}
+
+.custom-input .MuiOutlinedInput-notchedOutline {
+  @apply border-none;
+}
+.date-picker-popper {
+  & .MuiPickersDay-root.Mui-selected {
+    @apply !bg-pami-orange-default;
+  }
+  & .MuiPickersDay-root:hover {
+    @apply bg-pami-orange-light;
+  }
+}
+.custom-textarea {
+  @apply relative 
+  w-full;
+}
+.custom-textarea-label {
+  @apply absolute 
+  top-0 
+  left-0
+  pointer-events-none;
+
+  transform: translate(12px, 18px) scale(1);
+  transition: transform 0.2s ease-in-out;
+  transform-origin: top left;
+}
+.custom-textarea-input {
+  @apply !rounded-md 
+  !bg-brand-gray 
+  w-full
+  text-base
+  px-3
+  pt-[25px]
+  pb-2
+  mt-2
+  mb-1
+  outline-none;
+}
+.custom-textarea-input-focused {
+  @apply !bg-[#d8d9da];
+}
+.custom-textarea-label-focused {
+  @apply text-brand-blue;
+  transform: translate(12px, 11px) scale(0.75);
+}

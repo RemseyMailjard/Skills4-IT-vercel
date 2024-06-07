@@ -1,0 +1,9 @@
+.training-courses-details-main {
+  @apply min-h-screen
+  py-7 
+  px-5
+  text-white;
+}
+.training-courses-details-main .section {
+  @apply overflow-hidden;
+}

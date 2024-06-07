@@ -1,0 +1,36 @@
+.header-container {
+  @apply bg-[url("/images/heroSectionimg.jpg")] 
+  bg-no-repeat 
+  h-[calc(100vh_-_96px)]
+  max-h-[1500px]
+  min-h-[600px]
+  bg-cover
+  bg-center;
+}
+.header-container section {
+  @apply w-full 
+  h-full 
+  flex 
+  items-center 
+  justify-center 
+  px-5;
+  background: linear-gradient(90deg, #4434c280, transparent, #5cb49c80);
+}
+.header-container .heading-main {
+  @apply text-white text-center font-bold;
+  text-shadow: 0px 0px 10px black;
+}
+.header-container .main {
+  @apply flex 
+  flex-col 
+  items-center 
+  max-w-screen-md
+  gap-4;
+}
+.header-container .main .inputs {
+  @apply flex 
+  justify-center 
+  gap-2 
+  w-full
+  max-md:flex-wrap;
+}

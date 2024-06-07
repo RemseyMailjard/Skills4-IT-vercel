@@ -1,0 +1,47 @@
+.training-cards-main {
+  @apply flex 
+  flex-col
+  items-center
+  text-white
+  min-h-screen;
+}
+.training-cards-main .training-cards-main-header {
+  @apply w-full
+  /* bg-[linear-gradient(_rgb(0_0_0_/_21%),_transparent)]  */
+  pt-7 
+  px-5;
+}
+.training-cards-main .training-cards-main-container {
+  @apply px-3
+  py-7 
+  w-full;
+}
+.training-cards-main .training-cards-main-container .courses-main {
+  @apply flex 
+  w-full 
+  flex-wrap 
+  mt-4;
+}
+.training-cards-main .training-cards-main-container .pagination-main {
+  @apply flex 
+  justify-center 
+  py-7;
+}
+.training-cards-main
+  .training-cards-main-container
+  .pagination-main
+  .pagination-item {
+  @apply !text-white;
+}
+.training-cards-main
+  .training-cards-main-container
+  .pagination-main
+  .pagination-item-hover {
+  @apply hover:!bg-brand-blue;
+}
+.training-cards-main
+  .training-cards-main-container
+  .pagination-main
+  .pagination-item-selected {
+  @apply !bg-brand-blue;
+}

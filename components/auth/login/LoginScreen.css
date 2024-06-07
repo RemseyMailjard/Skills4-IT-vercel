@@ -1,0 +1,35 @@
+.login-screen {
+  @apply flex 
+  items-center
+  justify-center
+  w-full;
+}
+.login-container {
+  @apply bg-white
+  max-w-[700px]
+  w-full
+  p-3
+  rounded-xl
+  text-center
+  flex;
+}
+.login-container .login-signup {
+  @apply !my-3;
+}
+.login-container .forgot-password {
+  @apply flex
+    justify-end
+    !my-3;
+}
+.login-container .login-button {
+  @apply w-full;
+}
+.login-image {
+  @apply flex-1 w-1/2;
+}
+@media (max-width: 768px){
+  .login-image {
+    @apply hidden;
+  }
+  
+}
